@@ -1,0 +1,43 @@
+{
+  "name": "hotcoffee-config",
+  "version": "0.0.1",
+  "description": "Hotcoffee plugin to configure server via command line arguments",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kr1sp1n/hotcoffee-config.git"
+  },
+  "keywords": [
+    "hotcoffee",
+    "cli",
+    "config"
+  ],
+  "author": "kr1sp1n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kr1sp1n/hotcoffee-config/issues"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "index.coffee"
+      ],
+      "loader": "./node-loaders/coffee-script",
+      "data-cover-never": [
+        "node_modules",
+        "test"
+      ],
+      "spec-cov": {
+        "threshold": 100
+      }
+    }
+  },
+  "homepage": "https://github.com/kr1sp1n/hotcoffee-config",
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
+  }
+}
